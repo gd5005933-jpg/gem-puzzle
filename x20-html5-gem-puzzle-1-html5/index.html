@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#10182e"><meta name="description" content="Gem Puzzle — a bright, original match-three challenge."><title>Gem Puzzle — Match Three Challenge</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient a"></div><div class="ambient b"></div>
+<main class="app">
+<header class="topbar"><a class="brand" href="#" aria-label="Gem Puzzle home"><span class="brand-gem">◆</span><span>GEM<span class="brand-light"> PUZZLE</span></span></a><div class="top-actions"><div class="best-pill"><span>★</span><span>BEST <b id="bestScore">0</b></span></div><button class="icon-btn" id="soundBtn" aria-label="Toggle sound" title="Toggle sound">♫</button></div></header>
+<section class="hero"><div class="eyebrow"><span class="pulse"></span> THE GEM QUEST</div><h1>Make your <em>move.</em></h1><p>Match gems. Build your streak. Beat the target.</p></section>
+<section class="game-layout">
+<aside class="side-panel left-panel"><div class="level-card"><div class="label">CURRENT LEVEL</div><div class="level-number" id="levelNum">01</div><div class="level-name">Crystal Cove</div><div class="progress-track"><div id="levelProgress"></div></div><div class="progress-copy"><span>PROGRESS</span><b id="progressText">0%</b></div></div><div class="tip-card"><span class="tip-icon">✦</span><div><b>Quick tip</b><p>Swap any two neighboring gems to make a match of 3 or more.</p></div></div></aside>
+<div class="board-wrap"><div class="board-heading"><div><span class="label">YOUR BOARD</span><span class="board-status" id="statusText">READY TO PLAY</span></div><div class="moves"><span class="label">MOVES</span><b id="moves">30</b></div></div><div class="board-frame"><div id="board" class="board" role="grid" aria-label="Gem puzzle board"></div><div class="board-overlay" id="overlay"><div class="overlay-icon" id="overlayIcon">◆</div><h2 id="overlayTitle">Ready to play?</h2><p id="overlayCopy">Your next great run starts here.</p><button class="primary-btn" id="overlayBtn">START GAME <span>→</span></button></div></div><div class="board-foot"><span><i class="legend-gem">◆</i> Match 3+ to score</span><span id="comboLabel">COMBO ×1</span></div></div>
+<aside class="side-panel right-panel"><div class="score-card"><div class="label">YOUR SCORE</div><div class="score-number" id="score">0</div><div class="target-row"><span>LEVEL TARGET</span><b id="target">2,500</b></div><div class="target-track"><div id="targetProgress"></div></div></div><div class="streak-card"><span class="streak-flame">✦</span><div><div class="label">BEST STREAK</div><b id="streak">0 <small>matches</small></b></div></div><div class="controls"><button id="pauseBtn" class="control-btn" disabled><span>Ⅱ</span> Pause</button><button id="restartBtn" class="control-btn" disabled><span>↻</span> Restart</button></div><div class="sound-note"><span>♫</span> <span id="soundLabel">Sound on</span></div></aside>
+</section><footer>MADE FOR THE LOVE OF A GOOD MATCH <span>✦</span></footer>
+</main><script src="game.js"></script></body></html>
